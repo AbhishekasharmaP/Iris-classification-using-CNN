@@ -4,8 +4,8 @@ from PIL import Image, ImageTk
 from tensorflow.keras.preprocessing.image import img_to_array, load_img
 from tensorflow.keras.models import load_model
 
-model = load_model('C:\\Users\\Renjemar Home\\Downloads\\miniproject- Iris recognition using ML\\mpr_vgg_100_46_1.h5')
-with open('C:\\Users\\Renjemar Home\\Downloads\\miniproject- Iris recognition using ML\\ResultMap.pickle', 'rb') as handle:
+model = load_model('add the weights path')
+with open('add ResultMap path', 'rb') as handle:
     ResultMap = pk.load(handle)
 
 def preprocess_image(image_path, target_size=(64, 64)):
